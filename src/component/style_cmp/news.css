@@ -1,0 +1,153 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100%;
+}
+
+
+.news-page {
+  min-height: 100vh;
+  padding: 50px;
+  color: white;
+}
+
+
+.news-page h2 {
+  
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-article {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.news-article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-article p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.news-article a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.news-article a:hover {
+  text-decoration: underline;
+}
+
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.like-btn, .liked {
+  padding: 10px 20px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.like-btn:hover {
+  background-color: #5a67d8;
+}
+
+.liked {
+  background-color: #38a169;
+}
+
+.liked:hover {
+  background-color: #2f855a;
+}
+
+.da{
+
+  
+  
+  margin-left: -20px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;}
+
+.dive{    margin-top: -36px;
+  text-align: center;}
+@media (max-width: 480px) {
+  .dive{
+    margin-top: -50px;
+    font-size: 10px;
+    margin-top: -35px;
+   
+    text-align: center;
+    padding: 0px;
+  }
+  
+  
+}
+p{
+  max-height: 73px;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .news-article {
+    padding: 10px;
+  }
+
+  .news-image {
+    height: 150px;
+  }
+
+  .da {
+    flex-direction: column;
+    gap: 10px;
+    position: static;
+    margin-top: 10px;
+  }
+  .news-article a {
+    margin-left: 55px;
+  }
+  .like-btn, .liked {
+    width: 100%;
+    font-size: 13px;
+    margin-left: 38px;
+  }
+
+  .news-article p {
+    font-size: 14px;
+  }
+}

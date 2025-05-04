@@ -1,0 +1,105 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100%;
+ /* overflow: hidden*/
+}
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+.login-form button {
+  
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #5a67d8;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding-left: 0px;
+    width: 80%;
+    padding: 20px;
+
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+  }
+
+  .login-form input,
+  .login-form button {
+    margin-left: -5px;
+    padding: 10px 5px;
+    font-size: 14px;
+    
+  }
+
+  .signup-link {
+    font-size: 13px;
+  }
+  .login-form button {
+margin-left: 2.5px;
+
+  }
+}
